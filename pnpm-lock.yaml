@@ -1,9 +1,6 @@
 lockfileVersion: '6.0'
 
 dependencies:
-  '@drstrain/database':
-    specifier: ^1.0.1
-    version: 1.0.1
   '@types/express':
     specifier: ^4.17.21
     version: 4.17.21
@@ -30,10 +27,6 @@ packages:
     dependencies:
       '@jridgewell/trace-mapping': 0.3.9
     dev: true
-
-  /@drstrain/database@1.0.1:
-    resolution: {integrity: sha512-up4vTV54fjgMxM2ks5/16Iur67eqph+aQ2SEwuczfMXx58To1P3k9VbDlGfCbHVYbaGCHjBNZhFiRDYA2KRm9A==}
-    dev: false
 
   /@jridgewell/resolve-uri@3.1.2:
     resolution: {integrity: sha512-bRISgCIjP20/tbWSPWMEi54QVPRZExkuD9lJL+UIxUKtwVJA8wW1Trb1jMs1RFXo1CBTNZ/5hpC9QvmKWdopKw==}
