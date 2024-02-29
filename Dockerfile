@@ -26,5 +26,8 @@ WORKDIR /app
 COPY --from=build /app/dist /app/dist
 COPY --from=build /app/package.json /app/package.json
 
+# Install Prod Deps only
+RUN npm install --omit=dev
+
 # Container startup command for the web server (nginx in this case)
 CMD ["npm", "start"]
