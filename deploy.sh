@@ -1,3 +1,3 @@
 #!/bin/bash
 
-kubernetes apply -f k8s/manifests/*.yaml
+kubectl apply -f k8s/manifests/*.yaml
