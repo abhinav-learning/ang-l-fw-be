@@ -9,7 +9,7 @@ if [ $? -eq 0 ]; then
   image_tag="ang-l-fw/ang-l-fw-be:${commit_sha}"
 
   # Build the Docker image (adjust path to Dockerfile if needed)
-  docker build -t $image_tag -t ang-l-fw/ang-l-fw-be:latest .
+  docker build --no-cache -t $image_tag -t ang-l-fw/ang-l-fw-be:latest .
 
   echo "Successfully built and tagged image: $image_tag"
 else
