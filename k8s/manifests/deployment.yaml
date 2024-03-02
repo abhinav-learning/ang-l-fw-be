@@ -13,7 +13,7 @@ spec:
     spec:
       containers:
         - name: ang-l-fw-be
-          image: ang-l-fw/ang-l-fw-be
+          image: abhiit89/ang-l-fw-be
           resources:
             limits:
               memory: "128Mi"
