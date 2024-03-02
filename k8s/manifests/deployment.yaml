@@ -3,7 +3,6 @@ kind: Deployment
 metadata:
   name: ang-l-fw-be
 spec:
-  replicas: 2 
   selector:
     matchLabels:
       app: ang-l-fw-be
@@ -13,14 +12,11 @@ spec:
         app: ang-l-fw-be
     spec:
       containers:
-      - name: ang-l-fw-be
-        image: ang-l-fw/ang-l-fw-be:latest
-        port:
-          containerPort: 8000
-        resources:
-          requests:
-            memory: "100Mi"
-            cpu: "100m"
-          limits:
-            memory: "256Mi"
-            cpu: "200m"  # Adjust resource requests and limits as needed
+        - name: ang-l-fw-be
+          image: ang-l-fw/ang-l-fw-be:latest
+          resources:
+            limits:
+              memory: "128Mi"
+              cpu: "500m"
+          ports:
+            - containerPort: 8000
