@@ -11,3 +11,5 @@ deploy.sh
 create_cluster.sh
 docker_build.sh
 README.md
+k8s/**/*
+k8s/**/*.yaml
